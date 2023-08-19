@@ -11,13 +11,5 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
             secure: true,
             sameSite: "no_restriction"
         });
-        chrome.cookies.set({
-            domain: ".dimden.dev",
-            name: "ct0",
-            value: ct0,
-            url: "https://tweetdeck.dimden.dev/",
-            secure: true,
-            sameSite: "no_restriction"
-        });
     }
 });
